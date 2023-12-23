@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+ 
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+
+}
+nav button{
+  background-color: red;
   color: white;
+  padding: 6px 16px;
+  height: 30px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: black;
+
 }
 
-.App-link {
-  color: #61dafb;
+.Data {
+  display: flex;
+  height: calc(100vh - 72px);
+  align-items: center;
+  
+}
+.content h1 {
+  font-Weight: "700px";
+  font-size: 100px;
+  line-height: 102px;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content p{
+  font-size: 20px;
 }
+
+
+.main_content {
+  display: flex;
+  gap: 40px;
+}
+.first-btn {
+  font-size: 16px;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  height: 25px;
+}
+
+.p-items p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.brandname {
+  display: flex;
+  gap: 16px;
+}
+
+.second-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+
